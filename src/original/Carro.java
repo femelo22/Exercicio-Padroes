@@ -6,7 +6,7 @@ public interface Carro {
 	
 	public void desligar(String comando);
 	
-	public void acelerar(String comando);
+	public void acelerar(double velocidade);
 	
 	public void freiar(String comando);
 	

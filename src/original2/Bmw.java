@@ -1,9 +1,9 @@
-package original;
+package original2;
 
-public class Bmw implements Carro {
+public class Bmw {
 	
-	private double velocidade = 0;
-	private double velocidadeMaxima = 300;
+	private double velocidade;
+	private double velocidadeMaxima;
 	
 	public double getVelocidade() {
 		return velocidade;
@@ -29,13 +29,8 @@ public class Bmw implements Carro {
 		System.out.println("BMW " + comando);
 	}
 	
-	public void acelerar(double velocidade) {
-		this.velocidade += velocidade;
-		if(velocidade < this.velocidadeMaxima) {
-			System.out.println("BMW acelerando " + velocidade + "Km/h");
-		} else {			
-			System.out.println("Velocidade máxima atingida");
-		}
+	public void acelerar(String comando) {
+		System.out.println("BMW " + comando);
 	}
 	
 	public void freiar(String comando) {
@@ -52,11 +47,6 @@ public class Bmw implements Carro {
 
 	public void ligarPilotoAutomatico(String comando) {
 		System.out.println("BMW " + comando);	
-	}
-	
-	@Override
-	public void ligarRadio(String comando) {
-		//NÃO POSSUI
 	}
 	
 }

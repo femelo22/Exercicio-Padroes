@@ -6,16 +6,7 @@ public class Main {
 
 		Veiculo bmw = new Veiculo(new Bmw());
 		bmw.ligar();
-		bmw.acelerar();	
-		
-		
-		Veiculo fiat = new Veiculo(new Fiat());
-		fiat.acelerar();
-		fiat.ligar();
-		
-		
-		
-		
+		bmw.acelerar();		
 		
 	}
 }

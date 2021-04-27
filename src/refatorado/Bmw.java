@@ -1,6 +1,6 @@
 package refatorado;
 
-public class Bmw implements CarroBmw {
+public class Bmw implements CarroBmw{
 
 	private boolean estado = false;
 	
@@ -54,6 +54,12 @@ public class Bmw implements CarroBmw {
 		}else {
 			System.out.println(nome() + "É preciso ligar o carro");	
 		}
+	}
+
+	@Override
+	public void ligarPilotoAutomatico() {
+		System.out.println("Piloto automatico ligado");
+		
 	}
 
 	

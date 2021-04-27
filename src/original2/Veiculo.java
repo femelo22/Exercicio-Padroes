@@ -1,4 +1,4 @@
-package original;
+package original2;
 
 public class Veiculo {
 	
@@ -25,14 +25,14 @@ public class Veiculo {
 		this.marcaCarro = marcaCarro;
 	}
 
-	public void acelerar(Integer qtdAcelerada) {
+	public void acelerar() {
 		if(this.marcaCarro.equalsIgnoreCase("BMW")) {
 			Bmw bmw = new Bmw();
-			bmw.acelerar(qtdAcelerada * 10);
+			bmw.acelerar(this.comando);
 		}else {
 			if(this.marcaCarro.equalsIgnoreCase("Fiat")) {
 				Fiat fiat = new Fiat();
-				fiat.acelerar(qtdAcelerada * 3);
+				fiat.acelerar(comando);
 			}
 		}
 	}
@@ -40,11 +40,11 @@ public class Veiculo {
 	public void freiar() {
 		if(this.marcaCarro.equalsIgnoreCase("BMW")) {
 			Bmw bmw = new Bmw();
-			bmw.freiar(comando);
+			bmw.acelerar(this.comando);
 		}else {
 			if(this.marcaCarro.equalsIgnoreCase("Fiat")) {
 				Fiat fiat = new Fiat();
-				fiat.acelerar(30);
+				fiat.acelerar(comando);
 			}
 		}
 	}
@@ -52,11 +52,11 @@ public class Veiculo {
 	public void ligar() {
 		if(this.marcaCarro.equalsIgnoreCase("BMW")) {
 			Bmw bmw = new Bmw();
-			bmw.acelerar(50);
+			bmw.acelerar(this.comando);
 		}else {
 			if(this.marcaCarro.equalsIgnoreCase("Fiat")) {
 				Fiat fiat = new Fiat();
-				fiat.acelerar(30);
+				fiat.acelerar(comando);
 			}
 		}
 	}
@@ -64,16 +64,12 @@ public class Veiculo {
 	public void desligar() {
 		if(this.marcaCarro.equalsIgnoreCase("BMW")) {
 			Bmw bmw = new Bmw();
-			bmw.acelerar(50);
+			bmw.acelerar(this.comando);
 		}else {
 			if(this.marcaCarro.equalsIgnoreCase("Fiat")) {
 				Fiat fiat = new Fiat();
-				fiat.acelerar(30);
+				fiat.acelerar(comando);
 			}
 		}
 	}
-
-	
-	
-
 }

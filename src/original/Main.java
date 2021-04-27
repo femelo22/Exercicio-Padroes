@@ -3,13 +3,14 @@ package original;
 public class Main {
 	
 	public static void main(String[] args) {
-		Veiculo veiculo = new Veiculo("Bmw");
-		veiculo.setComando("Acelerar");
-		veiculo.acelerar();
+		Veiculo bmw = new Veiculo("Bmw");
+		bmw.acelerar(29);
 		
-		Veiculo veiculo2 = new Veiculo("Fiat");
-		veiculo2.setComando("Acelerar");
-		veiculo2.acelerar();
+		
+		Veiculo fiat = new Veiculo("Fiat");
+		fiat.acelerar(50);
+		
+		
 	}
 
 }
